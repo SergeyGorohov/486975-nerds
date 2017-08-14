@@ -5,8 +5,165 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+        <header class="main-header">
+            <nav class="main-header-navigation">
+                <a class="main-header-logo">
+                    <img src="img/logo.svg"  width="120" heignt="60px"  alt="Логотип дизайн-студии «Нёрдс»">
+                </a>
+                <ul class="site-navigation">
+                    <li><a href="studio.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="bascket">
+                    <li><a>Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+      
+<hr> <!-- удалить потом -->
+      
+        <main class="container">
+            
+           <h1 class="visually-hidden">Сайт веб-дизайна «Нёрдс»</h1>
+            
+<hr> <!-- удалить потом -->
+            
+            <section class="introduction">
+               <h2 class="visually-hidden">Вводная часть</h2>
+                <div> <!-- Есть непреодолимое желание разделять блоки дивами, но всё ещё не смекнул где это справедливо делать, а где нет. Тут справедливо? -->
+                    <strong>Долго, дорого, скурупулёзно</strong> <!-- Стилистически strong обозначает высокую важность, так что поставил его -->
+                    <p>Математически вывереный дизайн для вашего сайта или мобильного приложения</p>
+                    <a class="button" href="#">Узнать больше</a>
+                </div>
+                
+                <div>
+                    <img href="img/background.jpg" width="500" height="300" alt="Пример дизайна для мобильных устрйоств">
+                    <form>
+                        <input type="radio" name="background-image-chnger" checked>
+                        <input type="radio" name="background-image-chnger">
+                        <input type="radio" name="background-image-chnger">
+                    </form>
+                </div>
+            </section>
+<hr> <!-- удалить потом -->             
+            <section class="Services">
+                <h2 class="visually-hidden">Услуги</h2>
+                <ul class="services-list">
+                    <li class="services-item">
+                        <h3>Веб-сайты</h3>
+                        <img href="" width="210" height="100" alt="Пример сайта на ПК">
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+                        <a class="button button-red" href="#">Заказать</a>
+                    </li>
+                    <li class="services-item">
+                        <h3>Приложения</h3>
+                        <img href="" width="210" height="100" alt="Пример сайта на мобильном устройстве">
+                        
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+                        <a class="button button-green" href="#">Заказать</a>
+                    </li>
+                    <li class="services-item">
+                        <h3>Презентации</h3>
+                        <img href="" width="210" height="100" alt="Пример призентации">
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+                        <a class="button " href="#">Заказать</a>
+                    </li>
+                </ul>
+            </section> 
+<hr> <!-- удалить потом -->           
+            <section class="Information">
+                <h2 class="visually-hidden">Информационный блок</h2>
+                
+                <div class="basic-information">
+                    <b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
+                    <p>споведуем принипы минимализма и чистоты. Ставим матемтический расчёт превыше креатива. Работаем не поклаадая рук, как роботы.</p> 
+                    <ul>
+                        <li class="Information-item">Веб-сайтов любой сложности</li>
+                        <li class="Information-item">Мобильных приложений для iOS и Android</li>
+                        <li class="Information-item">Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </div>
+                
+                <article class="additional-information">
+                    <img href="img/nerds-color-logo.svg" width="250" height="150" alt="Логотип дизайн-студии «Нёрдс»"> <!-- Валидно ли делать одинаковые alt'ы для разных изображений? -->
+                  
+                    <b>С 2004 года любим точность во всём:</b>
+                    
+                  
+                    <table class="additional-information-table">
+                        <tr class="table-head">
+                            <th>Уровень самоотдачи</th>
+                            <th>Соблюдение сроков</th>
+                            <th>Минимальная предоплата</th>
+                        </tr>
+                        <tr class="table-numbers">
+                            <td>146<sup>%</sup></td><!-- Нужен ли тут sup? -->
+                            <td>100<sup>%</sup></td>
+                            <td>50<sup>%</sup></td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+<hr> <!-- удалить потом -->            
+            <section class="Clients">
+               <h2 class="visually-hidden">Клиенты</h2>
+                <ul class="clients-list">
+                    <li class="clients-item">
+                        <a href="https://htmlacademy.ru" target="_blank">
+                           <h3>Html-academy</h3>
+                            <img src="img/html-academy-logo.jpg" width="200" height="80">
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="#" target="_blank">
+                           <h3>Бабершоп Бородинский</h3>
+                            <img src="img/borodinsky-logo.jpg" width="200" height="80">
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="#" target="_blank">
+                           <h3>Пинк</h3>
+                            <img src="img/pink-logo.jpg" width="200" height="80">
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="#" target="_blank">
+                           <h3>Мишка</h3>
+                            <img src="img/mishka-logo.jpg" width="200" height="80">
+                        </a>
+                    </li>
+                </ul>
+            </section>           
+        </main>
+<hr> <!-- удалить потом -->
+      
+        <footer class="main-footer">
+            <article class="Map-and-contacts"> <!-- Объединяет карту и блок с контактной информацией и, вроде, является независимым блоком-->
+                <div class="contacts"> <!-- Вот этот див обособляет блок с контактной информацией от карты, мне показалось, что так нужно сделать, но не уверен, что правильно -->
+                    <b>Nёrds design studio</b>
+                    <address class="adress-and-number"> <!-- обрамляет контактную информацию, но по спецификации есть уточнение, что адресс должен быть именно контактным, так что не увуен в правильности -->
+                        
+                        <p>191186, Санкт-Петербург<br>
+                           ул Б. Конбшенная, д. 19/8<br>
+                           тел. +7 (812) 275-75-75</p>
+                    </address>
+                    <a href="contacts.html">Напишите нам</a>
+                </div>
+                    <img src="img/background-map.jpg" width="1000" height="300" alt="Карта локации офиса «Нёрдс»"> 
+            </article>
+            
+            <address class="social-networks"> <!-- Опять же, спецификаця говорит, что в адресс нужно помещать и ссылки на социальные сети, так что решил поступить тут так-->
+                <ul>
+                    <li><a href="#" class="social-button">Вконтакте</a></li>
+                    <li><a href="#" class="social-button">Фейсбук</a></li>
+                    <li><a href="#" class="social-button">Инстаграм</a></li>
+                </ul>
+                <p>Давайте дружить, это выгодно!</p>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </address>
+        </footer>
+<hr> <!-- удалить потом -->
   </body>
 </html>
