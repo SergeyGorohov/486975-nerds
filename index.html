@@ -32,19 +32,26 @@
             
             <section class="introduction">
                <h2 class="visually-hidden">Вводная часть</h2>
-                <div> <!-- Есть непреодолимое желание разделять блоки дивами, но всё ещё не смекнул где это справедливо делать, а где нет. Тут справедливо? -->
-                    <strong>Долго, дорого, скурупулёзно</strong> <!-- Стилистически strong обозначает высокую важность, так что поставил его -->
-                    <p>Математически вывереный дизайн для вашего сайта или мобильного приложения</p>
+                <div class="introduction-slide introduction-slide-1">
+                    <strong>Долго, дорого, скурупулёзно</strong>
+                    <p>Математически вывереный дизайн для вашего сайта или мобильного приложения.</p>
+                    <a class="button" href="#">Узнать больше</a>
+                </div>
+                <div class="introduction-slide introduction-slide-2">
+                    <strong>Любим математику как никто другой</strong>
+                    <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
+                    <a class="button" href="#">Узнать больше</a>
+                </div>
+                <div class="introduction-slide introduction-slide-3">
+                    <strong>Только ночь, только хардкор</strong>
+                    <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                     <a class="button" href="#">Узнать больше</a>
                 </div>
                 
                 <div>
-                    <img href="img/background.jpg" width="500" height="300" alt="Пример дизайна для мобильных устрйоств">
-                    <form>
                         <input type="radio" name="background-image-chnger" checked>
                         <input type="radio" name="background-image-chnger">
                         <input type="radio" name="background-image-chnger">
-                    </form>
                 </div>
             </section>
 <hr> <!-- удалить потом -->             
@@ -140,21 +147,18 @@
 <hr> <!-- удалить потом -->
       
         <footer class="main-footer">
-            <article class="Map-and-contacts"> <!-- Объединяет карту и блок с контактной информацией и, вроде, является независимым блоком-->
-                <div class="contacts"> <!-- Вот этот див обособляет блок с контактной информацией от карты, мне показалось, что так нужно сделать, но не уверен, что правильно -->
+            <article class="Map-and-contacts">
                     <b>Nёrds design studio</b>
-                    <address class="adress-and-number"> <!-- обрамляет контактную информацию, но по спецификации есть уточнение, что адресс должен быть именно контактным, так что не увуен в правильности -->
+                    <address class="adress-and-number">
                         
                         <p>191186, Санкт-Петербург<br>
                            ул Б. Конбшенная, д. 19/8<br>
                            тел. +7 (812) 275-75-75</p>
                     </address>
                     <a href="contacts.html">Напишите нам</a>
-                </div>
-                    <img src="img/background-map.jpg" width="1000" height="300" alt="Карта локации офиса «Нёрдс»"> 
             </article>
             
-            <address class="social-networks"> <!-- Опять же, спецификаця говорит, что в адресс нужно помещать и ссылки на социальные сети, так что решил поступить тут так-->
+            <address class="social-networks">
                 <ul>
                     <li><a href="#" class="social-button">Вконтакте</a></li>
                     <li><a href="#" class="social-button">Фейсбук</a></li>
