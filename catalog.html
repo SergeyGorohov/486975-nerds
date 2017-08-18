@@ -8,7 +8,7 @@
     <header class="main-header">
         <nav class="main-header-navigation">
             <a class="main-header-logo">
-                <img src="img/logo.svg"  width="120" heignt="60px"  alt="Логотип дизайн-студии «Нёрдс»">
+                <img src="img/nerds-logo.svg"  width="120" heignt="60px"  alt="Логотип дизайн-студии «Нёрдс»">
             </a>
             <ul class="site-navigation">
                 <li><a href="studio.html">Студия</a></li>
@@ -29,7 +29,6 @@
            <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" method="get" action="#">
                 <fieldset>
-                   <!-- Этот ползунок вообще выглядит как что-то невыполнимое на данном уровне моих знаний, так что сделал кусок, который смог поддаться -->
                     <label>От<input type="text" placeholder="0"></label>
                     <label>До<input type="text" placeholder="15 000"></label>
                 </fieldset>
@@ -97,7 +96,7 @@
                     
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/product-1.jpg" width="400" heigth="250" alt="Информационный сайт для туристов «Sedona»">
+                            <img src="img/img-sedona.jpg" width="400" heigth="250" alt="Информационный сайт для туристов «Sedona»">
                         </a>
                     </p>
                     
@@ -119,7 +118,7 @@
                     
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/product-2.jpg" width="400" heigth="250" alt="Сайт продуктового лендинга «Pink app»">
+                            <img src="img/img-pink.jpg" width="400" heigth="250" alt="Сайт продуктового лендинга «Pink app»">
                         </a>
                     </p>
                     
@@ -141,7 +140,7 @@
                     
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/product-3.jpg" width="400" heigth="250" alt="Сайт бабершопа «Бородинский»">
+                            <img src="img/img-barbershop.jpg" width="400" heigth="250" alt="Сайт бабершопа «Бородинский»">
                         </a>
                     </p>
                     <div class="hidden-description">
@@ -162,7 +161,7 @@
                     
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/product-4.jpg" width="400" heigth="250" alt="сайт магазина игрушек «Mishka»">
+                            <img src="img/img-mishka.jpg" width="400" heigth="250" alt="сайт магазина игрушек «Mishka»">
                         </a>
                     </p>
                     
@@ -184,7 +183,7 @@
                     
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/product-5.jpg" width="400" heigth="250" alt="сайт лендинга «A plus»">
+                            <img src="img/img-aplus.jpg" width="400" heigth="250" alt="сайт лендинга «A plus»">
                         </a>
                     </p>
                     <div class="hidden-description">
@@ -205,7 +204,7 @@
                     
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/product-6.jpg" width="400" heigth="250" alt="Сайт магазина кваса «Кваст»">
+                            <img src="img/img-kvast.jpg" width="400" heigth="250" alt="Сайт магазина кваса «Кваст»">
                         </a>
                     </p>
                     
@@ -243,14 +242,38 @@
             
         <address class="social-networks">
             <ul>
-                <li><a href="#" class="social-button">Вконтакте</a></li>
+                <li>
+                    <a href="#" class="social-button">Вконтакте</a>
+                </li>
                 <li><a href="#" class="social-button">Фейсбук</a></li>
-                    <li><a href="#" class="social-button">Инстаграм</a></li>
+                <li><a href="#" class="social-button">Инстаграм</a></li>
             </ul>
             <p>Давайте дружить, это выгодно!</p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </address>
     </footer>
     
+    <section class="write-us-pop-up">
+            <form>
+                <fieldset>
+                    <legend>Напишите нам</legend>
+                    <label>Ваше имя:
+                        <input type="text" placeholder="Представьтесь, пожалуйста" required>
+                    </label>
+                    
+                    <label>Ваш e-mail:
+                        <input type="email" placeholder="Для отправки ответа"  required>
+                    </label>
+                    
+                    <label>Текст письма:
+                        <textarea rows="5" cols="20" placeholder="В свободной форме"></textarea>
+                    </label>
+                    
+                    <button type="submit" value="отправить">Отправить</button>
+                    
+                    <button class="cross" type="button">X</button>
+                </fieldset>
+            </form>
+        </section>
 </body>
 </html>

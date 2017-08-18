@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+      <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
         <header class="main-header">
             <nav class="main-header-navigation">
                 <a class="main-header-logo">
-                    <img src="img/logo.svg"  width="120" heignt="60px"  alt="Логотип дизайн-студии «Нёрдс»">
+                    <img src="img/nerds-logo.svg"  width="120" heignt="60px"  alt="Логотип дизайн-студии «Нёрдс»">
                 </a>
                 <ul class="site-navigation">
                     <li><a href="studio.html">Студия</a></li>
@@ -17,7 +18,7 @@
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="bascket">
-                    <li><a>Корзина</a></li>
+                    <li><a href="#">Корзина</a></li>
                 </ul>
             </nav>
         </header>
@@ -60,20 +61,20 @@
                 <ul class="services-list">
                     <li class="services-item">
                         <h3>Веб-сайты</h3>
-                        <img href="" width="210" height="100" alt="Пример сайта на ПК">
+                        <img src="img/illustration-1.png" width="300" height="146" alt="Пример сайта на ПК">
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
                         <a class="button button-red" href="#">Заказать</a>
                     </li>
                     <li class="services-item">
                         <h3>Приложения</h3>
-                        <img href="" width="210" height="100" alt="Пример сайта на мобильном устройстве">
+                        <img src="img/illustration-2.png" width="300" height="146" alt="Пример сайта на мобильном устройстве">
                         
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
                         <a class="button button-green" href="#">Заказать</a>
                     </li>
                     <li class="services-item">
                         <h3>Презентации</h3>
-                        <img href="" width="210" height="100" alt="Пример призентации">
+                        <img src="img/illustration-3.png" width="300" height="146" alt="Пример призентации">
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
                         <a class="button " href="#">Заказать</a>
                     </li>
@@ -85,8 +86,10 @@
                 
                 <div class="basic-information">
                     <b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
-                    <p>споведуем принипы минимализма и чистоты. Ставим матемтический расчёт превыше креатива. Работаем не поклаадая рук, как роботы.</p> 
+                    <p>Исповедуем принипы минимализма и чистоты. Ставим матемтический расчёт превыше креатива. Работаем не поклаадая рук, как роботы.</p> 
+                    <p class="Information-label">Выполняем заказы на разработку:</p>
                     <ul>
+                        
                         <li class="Information-item">Веб-сайтов любой сложности</li>
                         <li class="Information-item">Мобильных приложений для iOS и Android</li>
                         <li class="Information-item">Слайдшоу и видео для корпоративных презентаций</li>
@@ -94,9 +97,9 @@
                 </div>
                 
                 <article class="additional-information">
-                    <img href="img/nerds-color-logo.svg" width="250" height="150" alt="Логотип дизайн-студии «Нёрдс»"> <!-- Валидно ли делать одинаковые alt'ы для разных изображений? -->
+                    <img src="img/nerds-illustration.png" width="250" height="150" alt="Логотип дизайн-студии «Нёрдс»">
                   
-                    <b>С 2004 года любим точность во всём:</b>
+                    <p>С 2004 года любим точность во всём:</p>
                     
                   
                     <table class="additional-information-table">
@@ -120,25 +123,25 @@
                     <li class="clients-item">
                         <a href="https://htmlacademy.ru" target="_blank">
                            <h3>Html-academy</h3>
-                            <img src="img/html-academy-logo.jpg" width="200" height="80">
+                            <img src="img/logo-1.png" width="199" height="68">
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="#" target="_blank">
                            <h3>Бабершоп Бородинский</h3>
-                            <img src="img/borodinsky-logo.jpg" width="200" height="80">
+                            <img src="img/logo-2.png" width="209" height="90">
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="#" target="_blank">
                            <h3>Пинк</h3>
-                            <img src="img/pink-logo.jpg" width="200" height="80">
+                            <img src="img/logo-3.png" width="185" height="52">
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="#" target="_blank">
                            <h3>Мишка</h3>
-                            <img src="img/mishka-logo.jpg" width="200" height="80">
+                            <img src="img/logo-4.png" width="173" height="84">
                         </a>
                     </li>
                 </ul>
@@ -169,5 +172,28 @@
             </address>
         </footer>
 <hr> <!-- удалить потом -->
+ 
+        <section class="write-us-pop-up">
+            <form>
+                <fieldset>
+                    <legend>Напишите нам</legend>
+                    <label>Ваше имя:
+                        <input type="text" placeholder="Представьтесь, пожалуйста" required>
+                    </label>
+                    
+                    <label>Ваш e-mail:
+                        <input type="email" placeholder="Для отправки ответа"  required>
+                    </label>
+                    
+                    <label>Текст письма:
+                        <textarea rows="5" cols="20" placeholder="В свободной форме"></textarea>
+                    </label>
+                    
+                    <button type="submit" value="отправить">Отправить</button>
+                    
+                    <button class="cross" type="button">X</button>
+                </fieldset>
+            </form>
+        </section>
   </body>
 </html>

@@ -1,0 +1,87 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    color: #283136;
+}
+
+.main-header .site-navigation,
+.main-header .bascket
+ {
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.introduction .introduction-slide strong {
+    font-family: "Roboto", sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.introduction-slide strong {
+    font-family: "Roboto", sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.basic-information b {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.Information-label{
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.additional-information p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.additional-information-table .table-head th {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.additional-information-table .table-numbers td {
+    font-size: 45px;
+    line-height: 10,06px;
+    font-weight: bold;
+    color: #000000;
+}
+.Map-and-contacts b {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283136;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+
+.adress-and-number {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    
+}
+
+.social-networks {
+    font-style: normal;
+}
