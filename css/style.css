@@ -3,7 +3,9 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-style: normal;
-    color: #283136;
+/*    color: #283136; это чтобы видеть где этот странный синеватый цвет текста */
+    color: red;
+    
 }
 
 .main-header .site-navigation,
@@ -30,7 +32,8 @@ body {
     color: #000000;
 }
 
-.introduction-slide strong {
+.introduction-slide strong,
+.catalog-name{
     font-family: "Roboto", sans-serif;
     font-size: 55px;
     line-height: 55px;
@@ -64,11 +67,50 @@ body {
     line-height: 10,06px;
     font-weight: bold;
     color: #000000;
+}  
+
+.filter-form legend {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
 }
+
+.filter-form fieldset:first-of-type legend {
+    letter-spacing: 0.1px;
+}
+
+.filter-input {
+    font-size: 16px;
+    line-height: 20px; 
+}
+
+.sorting-item a{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.catalog-item-header {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.catalog-item-description {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    
+}
+
 .Map-and-contacts b {
     font-size: 18px;
     line-height: 30px;
-    color: #283136;
     text-transform: uppercase;
     font-weight: bold;
     color: #000000;
