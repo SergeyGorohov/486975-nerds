@@ -1,129 +1,515 @@
 body {
-    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    font-family:  "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-style: normal;
-/*    color: #283136; это чтобы видеть где этот странный синеватый цвет текста */
     color: red;
-    
+    /*  красным обозначен текст, который самый частый в этом макете, дабы просто было проще ориентироваться  */
+    background-color: white;
 }
 
-.main-header .site-navigation,
-.main-header .bascket
- {
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.introduction .introduction-slide strong {
-    font-family: "Roboto", sans-serif;
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-}
-
-.services-item h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold; 
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.introduction-slide strong,
-.catalog-name{
-    font-family: "Roboto", sans-serif;
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-}
-
-.basic-information b {
-    font-family: "Roboto", sans-serif;
-    font-size: 45px;
-    line-height: 45px;
-    color: #000000;
-}
-
-.Information-label{
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.additional-information p {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.additional-information-table .table-head th {
-    font-size: 16px;
-    line-height: 18px;
-}
-
-.additional-information-table .table-numbers td {
-    font-size: 45px;
-    line-height: 10,06px;
-    font-weight: bold;
-    color: #000000;
-}  
-
-.filter-form legend {
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000000;
-}
-
-.filter-form fieldset:first-of-type legend {
-    letter-spacing: 0.1px;
-}
-
-.filter-input {
-    font-size: 16px;
-    line-height: 20px; 
-}
-
-.sorting-item a{
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #000000;
+a {
     text-decoration: none;
 }
 
-.catalog-item-header {
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.catalog-item-description {
+.button {
+    padding: 16px ;
+    border-radius: 5px;
+    background-color: rgba(251, 86, 90, 1); 
+    
     font-size: 16px;
     line-height: 18px;
-    color: #666666;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*Тут начало хедера*/
+
+.main-header {
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
     
 }
 
-.Map-and-contacts b {
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000000;
+.main-header,
+.introduction,
+.catalog-logo{
+    background-color: rgba(238, 238, 238, 1);
 }
 
-.adress-and-number {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: #666666;
+.site-navigation,
+.bascket {
+    list-style: none;
+}
+
+.site-navigation a,
+.bascket a{
+    color: rgba(0, 0, 0, 1);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.bascket a:hover,
+.bascket a:focus {
+  color: rgba(251,  86, 90, 1);
+}
+
+.site-navigation a:active,
+.bascket a:active {
+    color: rgba(166, 166, 166, 1);
+}
+/*Тут конец хедера*/
+
+/*Начало контейнера главной страницы*/
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.container h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/*Начало слайдера*/
+.introduction {
     
 }
 
-.social-networks {
+.introduction-slide strong {
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+}
+
+.slide-button {
+    padding: 16px; 
+    border-radius: 5px;
+    background-color: rgba(251, 86, 90, 1);
+    
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.slide-button:hover,
+.slide-button:focus {
+    background-color: rgba(231, 66, 70, 1);
+}
+
+/*Конец слайдера*/
+
+/*Начало услуг*/
+.services {
+    
+}
+
+.services .services-list {
+    list-style: none;
+}
+
+.services .services-list h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+}
+
+.services .button-red {
+    padding: 16px ;  
+    border-radius: 5px;
+    background-color: rgba(251, 86, 90, 1);
+    
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-transform: uppercase; 
+}
+
+.services .button-red:hover,
+.services .button-red:focus {
+    background-color: rgba(231, 66, 70, 1);
+}
+
+.services .button-red:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(215, 55, 59, 1);
+}
+
+
+.services .button-green {
+    padding: 16px ;  
+    border-radius: 5px;
+    background-color: rgba(0, 202, 116, 1);
+    
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.services .button-green:hover,
+.services .button-green:focus {
+    background-color: rgba(0, 188, 108, 1);
+}
+
+.services .button-green:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 170, 98, 1);
+}
+
+.services .button-yellow {
+    padding: 16px ;  
+    border-radius: 5px;
+    background-color: rgba(239, 200, 74, 1);
+    
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.services .button-yellow:hover,
+.services .button-yellow:focus {
+    background-color: rgba(234, 181, 52, 1);
+}
+
+.services .button-yellow:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(229, 167, 34, 1);
+}
+/*Конец усулг*/
+
+/*Начало информации*/
+.information {
+    
+}
+
+.basic-information p:first-child {
+    font-size: 45px;
+    line-height: 45px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+}
+
+.basic-information .we-can-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.basic-information .we-can-list {
+    list-style: none;
+}
+
+.additional-information {
+    
+}
+
+.additional-information caption {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.additional-information th {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.additional-information td {
+    font-size: 45px;
+    line-height: 10,06px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+}
+
+.additional-information td sup{
+    font-size: 28px;
+}
+/*Конец информации*/
+
+/*Начало клиентов*/
+.сlients {
+    
+}
+
+.сlients .clients-list {
+    list-style: none;
+}
+
+.сlients a {
+    opacity: 0.2;
+}
+
+.сlients a:hover,
+.сlients a:focus{
+    opacity: 1;
+}
+
+.сlients a:active {
+    opacity: 0.1;
+}
+/*Конец клиентов*/
+/*Конец контейнера главной страницы*/
+
+/*Начало контейнера каталога*/
+
+.catalog-logo {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: normal;
+}
+
+/*Начало фильтра*/
+.filter-form ul {
+    list-style: none;
+}
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.filter fieldset:first-of-type legend {
+    letter-spacing: 0.1px;
+}
+
+.filter .price-choice {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.filter .grid-choice {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.filter .features-choice {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.filter .show-button {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+/*Конец фильтра*/
+
+/* начало дива объединяющего центральную часть контента*/
+.main-content {
+    
+}
+/*Начало сотритовки*/
+.main-content .sorting strong{
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sorting-list{
+    list-style: none;
+}
+
+.sorting-list a {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*Конец сортировки*/
+
+/*Начало каталога*/
+.catalog .catalog-list {
+    list-style: none;
+}
+
+.catalog .hidden-description h3 {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.catalog .catalog-item-description {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(102, 102, 102, 1);
+    font-weight: 400;
+}
+
+.catalog .button {
+    padding: 16px ;
+    border: 1px solid rgba(251, 86, 90, 1);   
+    border-radius: 5px;
+    background-color: rgba(251, 86, 90, 1); 
+    
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.catalog .button:hover,
+.catalog .button:focus {
+    background-color: rgba(231, 66, 70, 1);
+}
+
+.catalog .button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(215, 55, 59, 1);
+}
+/*Конец каталога*/
+
+/*Начало пагинации*/
+.pagination .pagination-list {
+    list-style: none;
+}
+
+.pagination .pagination-list li {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pagination .pagination-list a {
+    color: rgba(0, 0, 0, 1);
+}
+/*Конец пагинации*/
+/*Конец контейнера каталога*/
+
+/*Начало футера */
+.main-footer {
+    
+}
+
+.contacts span {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contacts p {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(102, 102, 102, 1);
     font-style: normal;
 }
+
+.contacts .button {
+    padding: 16px ;
+    border: 1px solid rgba(251, 86, 90, 1);  
+    border-radius: 5px;
+    background-color: rgba(251, 86, 90, 1); 
+    
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contacts .button:hover,
+.contacts .button:focus{
+    background-color: rgba(231, 66, 70, 1);
+}
+
+.contacts .button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(215, 55, 59, 1);
+}
+
+.social-networks ul {
+    list-style: none;
+}
+
+.social-networks p:nth-of-type(1) {
+    font-size: 36px;
+    line-height: 36px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+}
+
+.social-networks p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    color: rgba(68, 68, 68, 1);
+    font-weight: 400;
+}
+
+/*Конец футера*/
+
+/*Начало попапа*/
+.write-us-popup {
+    
+}
+
+.write-us-popup p {
+    font-size: 45px;
+    line-height: 45px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+}
+/*конец попапа*/
