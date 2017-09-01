@@ -28,19 +28,19 @@
     <main>
         <h1 class="catalog-logo">Магазин готовых шаблонов</h1>
         
-        <section class="filter">
+        <section class="filters">
            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form class="filter-form" method="get" action="#">
+            <form class="filter" method="get" action="#">
                 <fieldset>
                    <legend>Стоимость:</legend>
                     <ul class="price-choice">
                         <li>
                             <label>От</label>
-                            <input type="text" placeholder="0">
+                            <input type="text" value="0" disabled>
                         </li>
                         <li>
                             <label>До</label> 
-                            <input type="text" placeholder="15 000">
+                            <input type="text" value="15 000" disabled>
                         </li>
                     </ul>
                 </fieldset>
@@ -48,16 +48,16 @@
                     <legend>Сетка:</legend>
                         <ul class="grid-choice">
                             <li>
-                                <input class="visually-hidden filter-input filter-radio" type="radio" name="grid-type" value="adaptive" checked>
-                                <label for="">Адаптивная</label>
+                                <input class="visually-hidden filter-input filter-radio" id="adaptive" type="radio" name="grid-type" value="adaptive" checked>
+                                <label for="adaptive">Адаптивная</label>
                             </li>
                             <li>
-                                <input class="visually-hidden filter-input filter-radio" type="radio" name="grid-type" value="fixed">
-                                <label for="">Фиксированная</label>
+                                <input class="visually-hidden filter-input filter-radio" id="fixed" type="radio" name="grid-type" value="fixed">
+                                <label for="fixed">Фиксированная</label>
                             </li>
                             <li>
-                                <input type="radio" class="visually-hidden filter-input filter-radio" name="grid-type" value="rubber">
-                                <label for="">Резиновая</label>
+                                <input type="radio" class="visually-hidden filter-input filter-radio" id="rubber" name="grid-type" value="rubber">
+                                <label for="rubber">Резиновая</label>
                             </li>
                         </ul>
                 </fieldset>
@@ -65,24 +65,24 @@
                     <legend>Особенности:</legend>
                     <ul class="features-choice">
                         <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="" checked>
-                            <label for="">Слайдер</label>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="slyder" type="checkbox" name="slyder" checked>
+                            <label for="slyder">Слайдер</label>
                         </li>
                         <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="">
-                            <label for="">Блок преимуществ</label>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="block" type="checkbox" name="block">
+                            <label for="block">Блок преимуществ</label>
                         </li>
                         <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="" checked>
-                            <label for="">Новости</label>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="news" type="checkbox" name="news" checked>
+                            <label for="news">Новости</label>
                         </li>
                         <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="">
-                            <label for="">Галерея</label>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="galery" type="checkbox" name="galery">
+                            <label for="galery">Галерея</label>
                         </li>
                         <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="">
-                            <label for="">Корзина</label>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="garbage" type="checkbox" name="garbage">
+                            <label for="garbage">Корзина</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -289,9 +289,9 @@
                 <label for="textarea">Текст письма:</label>
                 <textarea id="textarea" rows="5" cols="20" placeholder="В свободной форме"></textarea>
                     
-                    <button type="submit" value="отправить">Отправить</button>
+                <button type="submit" value="отправить">Отправить</button>
                     
-                    <button class="cross" type="button">X</button>
+                <button class="cross" type="button">X</button>
             </form>
         </section>
 </body>

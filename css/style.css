@@ -5,8 +5,8 @@ body {
     font-family:  "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: red;
-    /*  красным обозначен текст, который самый частый в этом макете, дабы просто было проще ориентироваться  */
+    color: rgba(40, 49, 54, 1);
+    /* color: rgba(40, 49, 54, 1); красным обозначен текст, который самый частый в этом макете, дабы просто было проще ориентироваться  */
     background-color: white;
 }
 
@@ -28,8 +28,6 @@ a {
 }
 
 .button {
-    padding: 16px ;
-    border-radius: 5px;
     background-color: rgba(251, 86, 90, 1); 
     
     font-size: 16px;
@@ -57,7 +55,7 @@ a {
 .main-header,
 .introduction,
 .catalog-logo{
-    background-color: rgba(238, 238, 238, 1);
+/*    background-color: rgba(238, 238, 238, 1);*/
 }
 
 .site-navigation,
@@ -78,7 +76,7 @@ a {
 }
 
 .site-navigation a:active,
-.bascket a:active {
+.bascket a:active{
     color: rgba(166, 166, 166, 1);
 }
 /*Тут конец хедера*/
@@ -86,13 +84,7 @@ a {
 /*Начало контейнера главной страницы*/
 
 .container {
-    margin: 0;
-    padding: 0;
-}
-
-.container h1 {
-    margin: 0;
-    padding: 0;
+   
 }
 
 /*Начало слайдера*/
@@ -106,10 +98,32 @@ a {
     color: rgba(0, 0, 0, 1);
     font-weight: 700;
 }
+.introduction-slide {
+    
+}
 
-.slide-button {
-    padding: 16px; 
-    border-radius: 5px;
+.introduction-slide-1 {
+    z-index: 1;
+    position: absolute;
+}
+
+.introduction-slide-2 {
+    z-index: 2;
+    position: absolute;
+}
+
+.introduction-slide-3 {
+    z-index: 3;
+    position: absolute;
+}
+
+
+.introduction .slide-button {
+    padding-top: 16px; 
+    padding-right: 55px;
+    padding-bottom: 16px;
+    padding-left: 55px;
+    border-radius: 3px;
     background-color: rgba(251, 86, 90, 1);
     
     font-size: 16px;
@@ -117,12 +131,20 @@ a {
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
     text-transform: uppercase;
+    
 }
 
-.slide-button:hover,
-.slide-button:focus {
+.introduction .slide-button:hover,
+.introduction .slide-button:focus {
     background-color: rgba(231, 66, 70, 1);
+    
 }
+
+.introduction .slide-button:active {
+    background-color: rgba(215, 55, 59, 1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
 
 /*Конец слайдера*/
 
@@ -143,15 +165,14 @@ a {
 }
 
 .services .button-red {
-    padding: 16px ;  
-    border-radius: 5px;
     background-color: rgba(251, 86, 90, 1);
     
     font-size: 16px;
     line-height: 18px;
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    
 }
 
 .services .button-red:hover,
@@ -162,12 +183,11 @@ a {
 .services .button-red:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(215, 55, 59, 1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 
 .services .button-green {
-    padding: 16px ;  
-    border-radius: 5px;
     background-color: rgba(0, 202, 116, 1);
     
     font-size: 16px;
@@ -185,11 +205,10 @@ a {
 .services .button-green:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(0, 170, 98, 1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.services .button-yellow {
-    padding: 16px ;  
-    border-radius: 5px;
+.services .button-yellow {  
     background-color: rgba(239, 200, 74, 1);
     
     font-size: 16px;
@@ -207,6 +226,7 @@ a {
 .services .button-yellow:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(229, 167, 34, 1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 /*Конец усулг*/
 
@@ -219,7 +239,10 @@ a {
     font-size: 45px;
     line-height: 45px;
     color: rgba(0, 0, 0, 1);
-    font-weight: 700;
+    font-weight: 400;
+    
+    margin: 0;
+    padding: 0;
 }
 
 .basic-information .we-can-title {
@@ -260,7 +283,7 @@ a {
 }
 
 .additional-information td sup{
-    font-size: 28px;
+    font-size: 26px;
 }
 /*Конец информации*/
 
@@ -301,14 +324,14 @@ a {
 }
 
 /*Начало фильтра*/
-.filter-form ul {
+.filter ul {
     list-style: none;
 }
-.filter fieldset {
+.filters fieldset {
     border: none;
 }
 
-.filter legend {
+.filters legend {
     font-size: 18px;
     line-height: 30px;
     color: rgba(0, 0, 0, 1);
@@ -317,33 +340,65 @@ a {
     
 }
 
-.filter fieldset:first-of-type legend {
+.filters fieldset:first-of-type legend {
     letter-spacing: 0.1px;
 }
 
-.filter .price-choice {
+.filters .price-choice {
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
 }
 
-.filter .grid-choice {
-    font-size: 16px;
-    line-height: 20px;
+input[type="text"] {
+    color: red;
 }
 
-.filter .features-choice {
+.filters .grid-choice {
     font-size: 16px;
     line-height: 20px;
+    
 }
 
-.filter .show-button {
+.filters .features-choice {
     font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.filters .show-button {
+    font-size: 16px;
+    border-radius: 3px;
     line-height: 18px;
     color: rgba(0, 0, 0, 1);
     font-weight: 700;
     text-transform: uppercase;
+    
+    
+    border: none;
+    padding: 10px 60px;
+    background-color: rgba(238, 238, 238, 1);
+}
 
+.filters .show-button:hover,
+.filters .show-button:focus {
+    background-color: rgba(223, 223, 223, 1);
+}
+
+.filters .show-button:active {
+    background-color: rgba(213, 213, 213, 1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+    color: rgba(0, 0, 0, 1);
+}
+
+.filter-input:active + label {
+    color: rgba(40, 49, 54, 1);
+    opacity: 0.3;
 }
 /*Конец фильтра*/
 
@@ -352,7 +407,7 @@ a {
     
 }
 /*Начало сотритовки*/
-.main-content .sorting strong{
+.sorting strong{
     font-size: 18px;
     line-height: 18px;
     color: rgba(0, 0, 0, 1);
@@ -360,16 +415,26 @@ a {
     text-transform: uppercase;
 }
 
-.sorting-list{
+.sorting .sorting-list{
     list-style: none;
 }
 
-.sorting-list a {
+.sorting .sorting-list a {
     font-size: 14px;
     line-height: 18px;
     color: rgba(0, 0, 0, 1);
     font-weight: 400;
     text-transform: uppercase;
+    opacity: 0.3;
+}
+
+.sorting .sorting-list a:hover,
+.sorting .sorting-list a:focus {
+    opacity: 0.6;
+}
+
+.sorting .sorting-list a:active {
+    opacity: 1;
 }
 /*Конец сортировки*/
 
@@ -394,8 +459,7 @@ a {
 }
 
 .catalog .button {
-    padding: 16px ;
-    border: 1px solid rgba(251, 86, 90, 1);   
+    padding: 16px;
     border-radius: 5px;
     background-color: rgba(251, 86, 90, 1); 
     
@@ -412,8 +476,8 @@ a {
 }
 
 .catalog .button:active {
-    color: rgba(255, 255, 255, 0.3);
     background-color: rgba(215, 55, 59, 1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 /*Конец каталога*/
 
@@ -456,9 +520,6 @@ a {
 }
 
 .contacts .button {
-    padding: 16px ;
-    border: 1px solid rgba(251, 86, 90, 1);  
-    border-radius: 5px;
     background-color: rgba(251, 86, 90, 1); 
     
     font-size: 16px;
@@ -476,13 +537,17 @@ a {
 .contacts .button:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(215, 55, 59, 1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .social-networks ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+/*    font-size: 0px;*/
 }
 
-.social-networks p:nth-of-type(1) {
+.freiend-discount p:nth-of-type(1) {
     font-size: 36px;
     line-height: 36px;
     font-style: normal;
@@ -490,7 +555,7 @@ a {
     font-weight: 700;
 }
 
-.social-networks p:nth-of-type(2) {
+.freiend-discount p:nth-of-type(2) {
     font-size: 16px;
     line-height: 22px;
     font-style: normal;
@@ -513,3 +578,247 @@ a {
     font-weight: 700;
 }
 /*конец попапа*/
+
+/* ----- Сеточные стили ----- */
+html,
+body {
+    width: 1440px;
+    height: 2476px;
+}
+
+body {
+    background-image: url("/img/nerds-index.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 1440px auto;
+}
+
+.container {
+    width:1160px;
+    margin: 0 auto;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+.main-header {
+    height: 132px; 
+    
+}
+
+.main-navigation {
+    display: flex;
+    height: 132px;
+    outline: 1px solid red; 
+}
+
+ .main-header-logo {
+    width: 160px;
+    height: 65px;
+    margin-top: 50px
+    
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 1px solid red; 
+    width: 435px;
+    height: 25px;
+    position: relative;
+    top: 74px;
+    left: 202px;
+    
+}
+
+.site-navigation li{
+    
+}
+
+.bascket {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    top: 74px;
+    left: 490px;
+}
+
+
+
+.introduction {
+    height: 413px;
+    outline: 1px solid red;
+}
+
+.introduction-slide {
+    width: 560px;
+    height: 413px;
+   
+}
+
+slider-button {
+    
+}
+
+.services {
+    min-height: 508px;
+    outline: 1px solid red;
+   
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    padding-top: 80px;
+    
+}
+
+.services-list li {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 360px;
+    outline: 1px solid red;
+}
+
+.services-list h3 {
+    order: 2;
+    margin-top: 25px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.services-list img {
+    order: 1;
+}
+
+.services-list p {
+    order: 3;
+}
+
+.services-list .button-red,
+.services-list .button-green,
+.services-list .button-yellow{
+    order: 4;
+}
+
+
+.information {
+    display: flex;
+    min-height: 527px;
+    outline: 1px solid red;
+    
+}
+
+.basic-information {
+    width: 660px;
+    height: 400px;
+    margin-top: 74px;
+}
+
+.basic-information p:nth-child(2) {
+    margin-top: 35px;
+}
+
+.basic-information .we-can-title {
+    margin-top: 38px;
+}
+
+.basic-information .we-can-list {
+    margin:0;
+    padding: 0;
+}
+
+.basic-information .we-can-list li {
+    margin-top: 24px;
+    margin-left: 35px;
+}
+
+.additional-information {
+    width: 360px;
+    height: 420px;
+    
+    margin-top: 40px;
+    margin-left: 140px;
+    opacity: 0.5;
+}
+
+.information-table {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.сlients { 
+    min-height: 182px;
+    outline: 1px solid red;
+    
+}
+
+.clients-list {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list li {
+    width: 260px;
+    outline: 1px solid red;
+}
+.main-footer {
+/*    background-image: url(/img/map.jpg);*/
+}
+.main-footer .container{
+    height: 714px;
+    outline: 1px solid red;
+}
+
+.flex {
+    display:flex;
+    flex-direction: column;
+}
+
+.contacts {
+    width: 319px;
+    height: 308px;
+    margin-top: 135px;
+    outline: 1px solid red;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: 
+}
+
+.social-networks {
+    outline: 1px solid red;
+    width: 260px;
+    height: 125px;
+    margin-top: 100px;
+}
+
+.social-networks ul {
+    display: flex;
+    justify-content: space-between
+}
+
+.freiend-discount {
+    width: 600px;
+    height: 125px;
+    outline: 1px solid red;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+.freiend-discount p:nth-of-type(1) {
+    outline: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
